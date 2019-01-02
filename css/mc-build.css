@@ -1,0 +1,259 @@
+  
+* {
+    box-sizing: border-box
+}
+
+body {
+  margin: 0
+}
+
+
+.header, .header h1, .header h2 {
+	margin:0px;
+    padding: 10px;
+	color: #3e4348;
+	background-color: #ffffff;
+    text-align: center
+}
+
+.header,.logo,.menu,hr{display:block}
+.menu,.menu ul,.menu ul li{padding:0;margin:0}
+.menu ul li{display:inline-block}
+.menu ul li a{
+	margin:0px;
+	padding:20px 25px;
+	display:block;
+	font-size:16px;
+	color:#272d33
+	}
+.menu ul li a i{
+	display:block;
+	text-align:center;
+	color:#0aabdd;
+	font-size:22px;
+	padding-bottom:5px
+	}
+.menu_check_box,.menu_icon{display:none}
+.menu ul li:hover a{
+	background:#0aabdd;
+	color:#fff}
+.menu ul li:hover a i{color:#fff}
+
+.header-black-white{
+	margin:0;
+    padding: 10px;
+	color: #ffffff;
+	background-color: #3e4348;
+	text-align: center
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px
+}
+
+.column.side {
+    width: 20%
+}
+
+.column.side.left {
+    width: 20%
+}
+
+.column.middle {
+    margin:0px;
+	width: 60%
+}
+
+.column.middle.blue {
+    margin: 0px;
+	margin-bottom: 20px;
+	width: 60%;
+	background-color: #0aabdd;
+	color: #ffffff;
+	border-radius: 25px
+}
+
+.column.middle.white {
+    margin-bottom: -20px;
+	width: 60%;
+	background-color: #ffffff;
+	color: #0aabdd;
+	border-radius: 25px
+}
+
+
+.footer .copyright {
+	margin: 15px 3px;
+	margin-top: 20px;
+    padding: 10px 15px;
+	color: #66615b;
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 20px;
+    text-align: center 
+}
+	
+.footer-black-white{
+	margin-top: 20px;
+    padding: 10px;
+	color: #ffffff;
+	background-color: #3e4348;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	white-space: nowrap
+}
+
+.row{margin:0px}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+
+
+.left{float:left}
+.right{float:right}
+
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  background-color: #FFFFFF;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1 }
+ 
+.card-blue {
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  background-color: #0aabdd;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1 }
+
+.infoCard{
+	margin:0;
+	margin-bottom: 20px;
+	padding:0;
+	display:block;
+	background:#fff;
+	color:#3e4348;
+	border-radius:10px;
+	text-align:center;
+	min-height:90px}
+	
+.infoCard h4{
+	margin:0;
+	padding:5px;
+	border-bottom:1px solid #ceeef8;
+	font-size:14px;
+	font-weight:400;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis}
+	
+.infoCard center{
+	margin:10px 0;
+	display:block;
+	font-weight:700;
+	font-size:15px }
+	
+.infoCard>span{
+	margin:0;
+	padding:0 0 10px;
+	display:block}
+	
+.infoCard>span i{
+	font-size:27px;
+	color:#777}
+
+
+
+.banner_text{
+	margin:0;
+	padding:0;
+	font-size:16px;
+	color:#fff;
+	font-weight:300;
+	line-height:28px}
+	
+.banner_text span.span_div{
+	display:inline-block;
+	margin:0;
+	padding:2px 10px;
+	line-height:normal;
+	background:#53dc08;
+	color:#fff;
+	font-size:13px;
+	font-weight:700;
+	border-radius:3px}
+
+
+
+@media (min-width: 1100px) and (max-width: 1400px) {
+	.column.side.left {
+		width: 5%;
+		height: 0px
+	}
+	.column.side {width: 30%}
+	.menu ul li a{
+		padding:10px 12px;
+		font-size:14px
+	}
+}
+ 
+
+@media screen and (max-width: 1100px) {
+    .column.side, .column.middle, .column.middle.blue, .column.middle.white {width: 100%}
+	.menu ul li a{
+		padding:10px 12px;
+		font-size:14px
+	}
+	.row{height: -20px}
+	.column.side.left {
+		width: -20px;
+		height: -20px
+	}
+
+}
+
+
+@media screen and (max-width:767px){
+	.menu ul{
+		width:100%;
+		left:0;
+		top:71px;
+		background:#fff;
+		z-index:2;
+		box-shadow:0 40px 40px 0 rgba(0,0,0,.5)
+	}
+	.menu ul li{
+		display:block;
+		border-top:1px solid #eee
+	}
+	.menu ul li a i{
+		display:inline-block;
+		vertical-align:middle;
+		padding-right:20px;
+		padding-left:20px
+	}
+	.menu ul li.active a{
+		background:#0aabdd;
+		color:#fff
+	}
+	.menu ul li.active a i{color:#fff}
+	.row{height: -20px}
+	.column.side.left {
+		width: -20px;
+		height: -20px
+	}
+
+}
