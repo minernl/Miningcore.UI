@@ -9,9 +9,9 @@ How to install & Configure
     You should now see the site but no live info
 
 - Change the config in the js/miningcore.js
-    // config
-    var API = 'http://localhost/api/'; // Change this in your miningcore public API address 
-    var defaultPool = 'YOUR_POOL_ID';  // Change this in your miningcore json Pools ID
+  // config
+  var API = 'http://localhost/api/'; // Change this in your miningcore public API address 
+  var defaultPool = 'YOUR_POOL_ID';  // Change this in your miningcore json Pools ID
 
 - Replace the img/pool-logo.jpg with you own pool logo
 
