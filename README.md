@@ -1,3 +1,5 @@
+# Update version is present at<BR> https://github.com/minernl/Miningcore.WebUI
+
 # Miningcore.UI
 Miningcore UI for the Coinfoundry Miningcore Pool
 
